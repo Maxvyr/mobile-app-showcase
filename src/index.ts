@@ -1,11 +1,8 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+const year = document.querySelector<HTMLBaseElement>("#year");
 
-import confetti from 'canvas-confetti';
+if(year?.textContent != null){
+  year.textContent = new Date().getFullYear().toString()
+  year.style.color = "#ffffff"
+}
 
-confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+export {}

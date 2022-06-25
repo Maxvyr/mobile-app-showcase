@@ -1,14 +1,48 @@
-#img {
-  display: block;
+body {
+  background-color: #6261fe;
+  padding: 0;
   margin: auto;
+}
+
+#logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 128px;
   width: 128px;
   padding: 2rem;
 }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+#year {
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+#name {
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+#title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#mobiles {
+  position: absolute;
+  bottom: 0%;
+  height: 50%;
+  width: 100%;
+  padding: 0;
 }
